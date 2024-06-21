@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>对比分析</title>
+    <link href="styles.css" rel="stylesheet">
+    <script defer src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script defer src="main.js"></script>
+</head>
+<body>
+<h1>纵向对比</h1>
+<div class="select_container">
+    <span id="phone_model">请选择手机型号</span>
+    <select class="opt">
+        <option value="oppo">OPPO Find X7</option>
+        <option value="huawei">华为nova12</option>
+        <option value="apple">苹果15</option>
+        <option value="sanxing">三星s23</option>
+        <option value="xiaomi">小米14</option>
+    </select>
+</div>
+
+<div class="container">
+    <div class="oppo_container">
+        <canvas class="comment"></canvas>
+    </div>
+    <div class="time_container">
+        <canvas class="time"></canvas>
+    </div>
+    <div class="word_cloud_container">
+        <img class="image">
+    </div>
+    <div class="model_container">
+        <canvas class="model"></canvas>
+    </div>
+    <div class="color_container">
+        <canvas class="color"></canvas>
+    </div>
+</div>
+
+<h1>横向对比</h1>
+<div class="container">
+    <div class="favorable_container">
+        <h3>好评词频</h3>
+        <canvas class="haoping"></canvas>
+    </div>
+</div>
+</body>
+</html>

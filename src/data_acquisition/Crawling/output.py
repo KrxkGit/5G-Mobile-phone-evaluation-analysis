@@ -13,7 +13,7 @@ def excel(items, product_id):
     ws = wb.active
 
     # 设置表头
-    head_data = ['nickname', 'id', '内容', '时间','颜色','型号']
+    head_data = ['nickname', 'id', '内容', '时间', '颜色', '型号']
     for i in range(0, 6):
         ws.cell(row=1, column=i + 1).value = head_data[i]
 
