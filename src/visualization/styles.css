@@ -1,0 +1,108 @@
+.select_container {
+    text-align: center;
+}
+
+select {
+    margin: 2em auto;
+    display: block;
+    text-align: center;
+    width: 200px;
+    height: 30px;
+}
+
+#phone_model {
+    /* 文本样式 */
+    font-family: 'Helvetica', sans-serif; /* 设置字体族 */
+    font-size: 16px;                       /* 设置字体大小 */
+    color: #333;                           /* 设置文本颜色 */
+    font-weight: bold;                     /* 设置字体为粗体 */
+    /*text-transform: uppercase;             !* 将文本转换为大写 *!*/
+
+    /* 布局和盒模型 */
+    display: inline-block;                 /* 设置为内联块元素 */
+    /*width: 100px;                          !* 宽度 *!*/
+    /*height: 50px;                          !* 高度 *!*/
+    margin: 10px auto;                          /* 外边距 */
+    padding: 5px;                            /* 内边距 */
+    border: 1px solid #000;                /* 边框 */
+
+    /* 背景和边框效果 */
+    background-color: #f0f0f0;             /* 背景颜色 */
+    border-radius: 5px;                    /* 边框圆角 */
+
+    /* 文本对齐 */
+    text-align: center;                    /* 水平居中文本 */
+    vertical-align: middle;                /* 垂直对齐（对于内联或表格单元格中的元素） */
+
+    /* 装饰 */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* 阴影效果 */
+    transition: all 0.3s ease;             /* 平滑过渡效果 */
+}
+
+/* 鼠标悬停效果 */
+#phone_model:hover {
+    background-color: #e0e0e0;             /* 鼠标悬停时的背景颜色 */
+    transform: scale(1.1);                 /* 鼠标悬停时放大 */
+    cursor: pointer;                       /* 鼠标悬停时的光标样式 */
+}
+
+h1 {
+    /* 文本样式 */
+    font-family: 'Arial', sans-serif; /* 字体族 */
+    font-size: 2em;                     /* 字体大小 */
+    color: #ec793b;                         /* 文本颜色 */
+    text-align: center;                 /* 文本对齐方式 */
+    text-transform: uppercase;           /* 文本转换为大写 */
+    letter-spacing: 2px;                /* 字母间距 */
+    word-spacing: 4px;                  /* 单词间距 */
+    line-height: 1.4;                   /* 行高 */
+
+    /* 装饰和背景 */
+    text-shadow: 2px 2px 4px rgba(217, 171, 72, 0.5); /* 文本阴影 */
+    background-color: #f8f8f8;           /* 背景颜色 */
+    border-bottom: 1px solid #eaeaea;    /* 下边框 */
+
+    /* 布局 */
+    margin: 20px 0;                      /* 外边距 */
+    padding: 10px 0;                     /* 内边距 */
+
+    /* 过渡和动画 */
+    transition: all 0.3s ease;           /* 过渡效果 */
+}
+
+/* 鼠标悬停效果 */
+h1:hover {
+    color: #efd363;                      /* 鼠标悬停时的颜色 */
+    cursor: pointer;                     /* 鼠标悬停时的光标样式 */
+    text-shadow: none;                   /* 移除文本阴影 */
+    background-color: #e9ecef;           /* 鼠标悬停时的背景颜色 */
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+.oppo_container,
+.time_container,
+.model_container,
+.color_container,
+.word_cloud_container {
+    padding: 0 .2rem;
+    width: 20%;
+}
+
+.favorable_container {
+    width: 100%;
+    height: 500px;
+}
+
+.container {
+    margin: 0 auto;
+    display: flex;
+}
+
+div img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
