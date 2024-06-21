@@ -6,7 +6,7 @@ def scrape_comments(product_id, page_amount=25):
     - product_id (int): 商品ID
     - page_amount (int): 要爬取的页数
     """
-    score = 3  #1差评 2中评 3好评
+    score = 3  # 1差评 2中评 3好评
 
     j = 0
     judge = True
