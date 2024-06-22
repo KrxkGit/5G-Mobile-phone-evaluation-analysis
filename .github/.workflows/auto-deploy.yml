@@ -20,4 +20,4 @@ jobs:
         git remote add target-repo https://<TOKEN>@github.com/KrxkGit/KrxkGit.github.io.git
         git push target-repo HEAD:main --force
       env:
-        TOKEN: ${{ secrets.Access_token }}
+        TOKEN: ${{ secrets.ACCESS_TOKEN }}
