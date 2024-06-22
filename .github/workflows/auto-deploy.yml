@@ -9,14 +9,8 @@ jobs:
     - name: Checkout source code
       uses: actions/checkout@v2
 
-    - name: Add partial content
-      run: |
-        # 将需要推送的部分复制到新目录
-        mkdir partial-content
-        cp -r src/visualization ./partial-content/
-
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
       with:
           github_token: ${{ secrets.ACCESS_TOKEN }}
-          publish_dir: ./partial-content
+          publish_dir: ./src/visualization
