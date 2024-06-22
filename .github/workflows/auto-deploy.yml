@@ -16,9 +16,7 @@ jobs:
         cp -r src/visualization ./partial-content/
 
     - name: Deploy
-      uses: JamesIves/github-pages-deploy-action@v4.3.3
+      uses: peaceiris/actions-gh-pages@v3
       with:
-        # 项目配置的打包目录名称
-        folder: partial-content
-        # 部署后提交到的分支
-        branch: static-pages
+          github_token: ${{ secrets.ACCESS_TOKEN }}
+          publish_dir: ./partial-content
