@@ -1,0 +1,23 @@
+name: Push Partial Content to Another Repository
+
+on: [push]
+
+jobs:
+  push_job:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout source code
+      uses: actions/checkout@v2
+
+    - name: Add partial content
+      run: |
+        # 将需要推送的部分复制到新目录
+        mkdir partial-content
+        cp -r src/visualization ./partial-content/
+
+    - name: Push to another repository
+      run: |
+        git remote add target-repo https://<TOKEN>@github.com/KrxkGit/KrxkGit.github.io.git
+        git push target-repo HEAD:main --force
+      env:
+        TOKEN: ${{ secrets.TOKEN }}
