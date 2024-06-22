@@ -11,7 +11,7 @@ jobs:
 
     - name: Add partial content
       run: |
-        # 将需要推送的部分复制到新目录
+        #  将需要推送的部分复制到新目录
         mkdir partial-content
         cp -r src/visualization ./partial-content/
 
