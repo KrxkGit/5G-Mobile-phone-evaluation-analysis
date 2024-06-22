@@ -17,7 +17,5 @@ jobs:
 
     - name: Push to another repository
       run: |
-        git remote add target-repo https://${env.TOKEN}@github.com/KrxkGit/KrxkGit.github.io.git
+        git remote add target-repo https://x-access-token:${{ secrets.ACCESS_TOKEN }}@github.com/KrxkGit/KrxkGit.github.io.git
         git push target-repo HEAD:main --force
-      env:
-        TOKEN: ${{ secrets.GITHUB_TOKEN }}
