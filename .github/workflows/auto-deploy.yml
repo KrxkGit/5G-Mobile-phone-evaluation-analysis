@@ -1,4 +1,4 @@
-name: Push Partial Content to Another Repository
+name: Auto-Deploy-Website
 
 on: [push]
 
