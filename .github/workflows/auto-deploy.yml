@@ -15,9 +15,10 @@ jobs:
         mkdir partial-content
         cp -r src/visualization ./partial-content/
 
-    - name: Push to another repository
-      run: |
-        git remote add target-repo https://github.com/KrxkGit/KrxkGit.github.io.git
-        git push target-repo HEAD:main --force
-      env:
-        TOKEN: ${{ secrets.TOKEN }}
+    - name: Deploy
+      uses: JamesIves/github-pages-deploy-action@v4.3.3
+      with:
+        # 项目配置的打包目录名称
+        folder: partial-content
+        # 部署后提交到的分支
+        branch: main
